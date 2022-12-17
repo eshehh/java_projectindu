@@ -1,0 +1,14 @@
+/CeilingFan.class
+/CeilingFanHighCommand.class
+/CeilingFanLowCommand.class
+/CeilingFanMediumCommand.class
+/CeilingFanOffCommand.class
+/Command.class
+/DimmerLightOffCommand.class
+/DimmerLightOnCommand.class
+/Light.class
+/LightOffCommand.class
+/LightOnCommand.class
+/NoCommand.class
+/RemoteControlWithUndo.class
+/RemoteLoader.class

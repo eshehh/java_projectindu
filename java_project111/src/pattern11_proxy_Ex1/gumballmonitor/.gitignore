@@ -1,0 +1,9 @@
+/GumballMachine.class
+/GumballMachineTestDrive.class
+/GumballMonitor.class
+/HasQuarterState.class
+/NoQuarterState.class
+/SoldOutState.class
+/SoldState.class
+/State.class
+/WinnerState.class
