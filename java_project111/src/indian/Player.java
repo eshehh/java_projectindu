@@ -27,7 +27,11 @@ public class Player {
 	public void minusCoin() {
 		this.coin = this.coin - 1;
 	}
-
+    
+	public void minusCoin1(int coin) {
+		this.coin = this.coin -7;
+	}
+	
 	public int getCard() {
 		return playerList.get(0);
 	}

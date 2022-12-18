@@ -13,7 +13,7 @@ public class CardExample {
 
 		computer.getCard(deck); // PC 카드 수령
 		player.getCard(deck); // 플레이어 카드 수령
-		player.setCoin(30); // 플레이어 코인 30개 지급
+		player.setCoin(40); // 플레이어 코인 40개 지급
 		RuleExplain.explain(); // 룰 설명
 		while (round < 21) { // 게임시작
 			int com = computer.getCard(); // PC가 가져온 카드 1개
@@ -68,9 +68,17 @@ public class CardExample {
 						}
 					}
 				} else if (choice == 2) {
-					System.out.println("베팅을 포기하셨습니다. 코인 한 개가 줄어들고 새 라운드를 시작합니다.");
-					System.out.println("플레이어의 카드는 [" +play + "] 였습니다.");
-					player.minusCoin();
+					
+					if (play == 10) {
+						
+						System.out.println("카드 숫자가 10개인데 베팅을 포기하셨습니다. 페널티로 코인 7개가 차감됩니다.");
+						player.minusCoin1(0);
+					} 
+					else {
+						System.out.println("베팅을 포기하셨습니다. 코인 한 개가 줄어들고 새 라운드를 시작합니다.");
+						System.out.println("플레이어의 카드는 [" +play + "] 였습니다.");
+						player.minusCoin();
+					}
 				}
 				round++;
 			}
